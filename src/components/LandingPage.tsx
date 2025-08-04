@@ -54,19 +54,19 @@ const LandingPage = () => {
 
               <div className="flex items-center space-x-8 pt-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">50K+</div>
-                  <div className="text-sm text-gray-600">Happy Customers</div>
+                 {/*  <div className="text-2xl font-bold text-gray-900">50K+</div>
+                  <div className="text-sm text-gray-600">Happy Customers</div>*/}
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">200+</div>
-                  <div className="text-sm text-gray-600">Partner Vendors</div>
+                 {/*   <div className="text-2xl font-bold text-gray-900">200+</div>
+                  <div className="text-sm text-gray-600">Partner Vendors</div>*/}
                 </div>
                 <div className="text-center">
                   <div className="flex items-center justify-center space-x-1">
-                    <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    <span className="text-2xl font-bold text-gray-900">4.8</span>
+                    {/*<Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />*/}
+                   {/* <span className="text-2xl font-bold text-gray-900">4.8</span>*/}
                   </div>
-                  <div className="text-sm text-gray-600">App Rating</div>
+                  {/*<div className="text-sm text-gray-600">App Rating</div>*/}
                 </div>
               </div>
             </div>
