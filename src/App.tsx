@@ -6,6 +6,7 @@ import ComingSoon from './components/ComingSoon';
 import Contact from './components/Contact';
 import { ModalProvider } from './context/ModalContext';
 import Modal from './components/Modal';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -13,14 +14,15 @@ function App() {
       <Router>
         <div className="min-h-screen">
           <Routes>
-                      <Route path="/" element={<LandingPage />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/coming-soon" element={<ComingSoon />} />
-          <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/coming-soon" element={<ComingSoon />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Modal />
       </Router>
+      <Analytics />
     </ModalProvider>
   );
 }
