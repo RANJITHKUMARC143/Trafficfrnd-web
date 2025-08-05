@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import { ModalProvider } from './context/ModalContext';
 import Modal from './components/Modal';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Modal />
       </Router>
       <Analytics />
+      <SpeedInsights />
     </ModalProvider>
   );
 }
