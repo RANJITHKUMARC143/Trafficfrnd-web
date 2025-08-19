@@ -44,7 +44,7 @@ const LandingPage = () => {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
                 <button 
-                  onClick={() => openModal('vendor')}
+                  onClick={() => { window.location.href = 'https://tarfficfrnd-vendor-patner.vercel.app'; }}
                   className="group flex items-center justify-center px-8 py-4 bg-white text-orange-600 font-semibold border-2 border-orange-600 rounded-xl hover:bg-orange-600 hover:text-white transition-all duration-300 shadow-lg"
                 >
                   <Users className="mr-2 h-5 w-5" />

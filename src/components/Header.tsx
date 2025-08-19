@@ -50,7 +50,7 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <button 
-              onClick={() => openModal('vendor')}
+              onClick={() => { window.location.href = 'https://tarfficfrnd-vendor-patner.vercel.app'; }}
               className="px-4 py-2 text-sm font-medium text-orange-600 border border-orange-600 rounded-lg hover:bg-orange-50 transition-colors duration-200"
             >
               Join as Vendor
@@ -98,8 +98,8 @@ const Header = () => {
             <div className="pt-4 space-y-2">
               <button 
                 onClick={() => {
-                  openModal('vendor');
                   setIsMenuOpen(false);
+                  window.location.href = 'https://tarfficfrnd-vendor-patner.vercel.app';
                 }}
                 className="w-full px-4 py-2 text-sm font-medium text-orange-600 border border-orange-600 rounded-lg hover:bg-orange-50 transition-colors duration-200"
               >
