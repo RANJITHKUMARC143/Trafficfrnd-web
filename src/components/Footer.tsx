@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const Footer = () => {
@@ -40,10 +41,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors duration-200">Home</a></li>
-              <li><a href="/how-it-works" className="text-gray-400 hover:text-white transition-colors duration-200">How It Works</a></li>
-              <li><a href="#vendors" className="text-gray-400 hover:text-white transition-colors duration-200">Vendors</a></li>
-              <li><a href="#partners" className="text-gray-400 hover:text-white transition-colors duration-200">Partners</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors duration-200">Home</Link></li>
+              <li><Link to="/how-it-works" className="text-gray-400 hover:text-white transition-colors duration-200">How It Works</Link></li>
+              <li><Link to="/coming-soon" className="text-gray-400 hover:text-white transition-colors duration-200">Vendors</Link></li>
+              <li><Link to="/coming-soon" className="text-gray-400 hover:text-white transition-colors duration-200">Partners</Link></li>
             </ul>
           </div>
 
@@ -51,10 +52,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Refund Policy</a></li>
+              <li><Link to="/terms" className="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</Link></li>
+              <li><Link to="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</Link></li>
+              <li><Link to="/cookies" className="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</Link></li>
+              <li><Link to="/refunds" className="text-gray-400 hover:text-white transition-colors duration-200">Refund Policy</Link></li>
             </ul>
           </div>
 
