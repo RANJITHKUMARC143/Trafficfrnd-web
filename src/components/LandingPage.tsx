@@ -43,13 +43,6 @@ const LandingPage = () => {
                   Download App
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
-                <button 
-                  onClick={() => { window.location.href = 'https://tarfficfrnd-vendor-patner.vercel.app'; }}
-                  className="group flex items-center justify-center px-8 py-4 bg-white text-emerald-600 font-semibold border-2 border-emerald-600 rounded-xl hover:bg-emerald-600 hover:text-white transition-all duration-300 shadow-lg"
-                >
-                  <Users className="mr-2 h-5 w-5" />
-                  Join as Vendor
-                </button>
               </div>
 
               <div className="flex items-center space-x-8 pt-4">
