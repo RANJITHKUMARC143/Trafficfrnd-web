@@ -11,7 +11,7 @@ const TermsOfService = () => {
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms of Service</h1>
           <p className="text-gray-600 mb-4">Last updated: September 12, 2025</p>
 
-          <div className="prose prose-orange max-w-none">
+          <div className="prose prose-emerald max-w-none">
             <p>
               Welcome to Traffic Frnd, a service provided by Curiospry Technologies Pvt Ltd.
               By accessing or using our website, mobile application, or any related services,

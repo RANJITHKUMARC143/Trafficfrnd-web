@@ -86,17 +86,17 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-16 bg-gradient-to-br from-orange-50 via-red-50 to-pink-50">
+      <section className="pt-16 bg-gradient-to-br from-emerald-50 via-green-50 to-lime-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
-                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></span>
+              <div className="inline-flex items-center px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">
+                <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
                 Get in Touch
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Contact{' '}
-                <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
                   Us
                 </span>
               </h1>
@@ -137,7 +137,7 @@ const Contact = () => {
                         name="fullName"
                         value={formData.fullName}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
                         placeholder="Enter your full name"
                       />
                     </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -169,7 +169,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
                         placeholder="Enter your phone number"
                       />
                     </div>
@@ -182,7 +182,7 @@ const Contact = () => {
                         name="category"
                         value={formData.category}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
                       >
                         <option value="">Select category</option>
                         <option value="user">User</option>
@@ -204,7 +204,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 resize-none"
                       placeholder="Tell us how we can help you..."
                     />
                   </div>
@@ -215,7 +215,7 @@ const Contact = () => {
                     className={`w-full flex items-center justify-center px-6 py-4 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg ${
                       isLoading || !formData.email || !formData.message
                         ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                        : 'bg-gradient-to-r from-orange-500 to-red-500 text-white hover:from-orange-600 hover:to-red-600'
+                        : 'bg-gradient-to-r from-emerald-500 to-green-500 text-white hover:from-emerald-600 hover:to-green-600'
                     }`}
                   >
                     {isLoading ? (
@@ -261,7 +261,7 @@ const Contact = () => {
 
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                  <div key={index} className="flex items-start space-x-4 p-6 rounded-xl transition-all duration-200 bg-gradient-to-b from-white/70 via-white/50 to-white/30 ring-1 ring-white/30 border border-white/20 supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150 hover:from-white/80 hover:via-white/60 hover:to-white/40">
                     <div className={`w-12 h-12 bg-gradient-to-r ${info.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
                       <info.icon className="h-6 w-6 text-white" />
                     </div>
@@ -269,7 +269,7 @@ const Contact = () => {
                       <h3 className="text-lg font-semibold text-gray-900">{info.title}</h3>
                       <a
                         href={info.href}
-                        className="text-gray-600 hover:text-orange-600 transition-colors duration-200"
+                        className="text-gray-600 hover:text-emerald-600 transition-colors duration-200"
                       >
                         {info.value}
                       </a>
@@ -304,9 +304,9 @@ const Contact = () => {
       <section className="py-16 bg-gradient-to-r from-gray-900 via-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <div className="flex justify-center">
+              <div className="flex justify-center">
               <div>
-                <Logo size="md" />
+                <Logo size="md" className="md:h-16 md:w-16" />
               </div>
             </div>
             

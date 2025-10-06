@@ -27,13 +27,13 @@ const Modal = () => {
   if (!showModal) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 transform transition-all duration-300 scale-100">
+    <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4">
+      <div className="rounded-2xl shadow-2xl max-w-md w-full mx-4 transform transition-all duration-300 scale-100 bg-gradient-to-b from-white/70 via-white/50 to-white/30 ring-1 ring-white/30 border border-white/20 supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150">
         <div className="p-6">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full flex items-center justify-center">
                 {modalType === 'app' ? (
                   <Download className="h-5 w-5 text-white" />
                 ) : (
@@ -56,7 +56,7 @@ const Modal = () => {
           <div className="space-y-4">
             <p className="text-gray-600 leading-relaxed">
               {modalType === 'app' 
-                ? "The Traffic Frnd app will be available for download from October 1st. Stay tuned!"
+                ? "The Traffic Frnd app will be available for download from November 1st. Stay tuned!"
                 : "Be the first to partner with us when we launch in October. Interested? Leave your contact!"
               }
             </p>
@@ -69,7 +69,7 @@ const Modal = () => {
                     onClick={() => setContactType('email')}
                     className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                       contactType === 'email' 
-                        ? 'bg-orange-100 text-orange-700' 
+                        ? 'bg-emerald-100 text-emerald-700' 
                         : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                     }`}
                   >
@@ -80,7 +80,7 @@ const Modal = () => {
                     onClick={() => setContactType('phone')}
                     className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                       contactType === 'phone' 
-                        ? 'bg-orange-100 text-orange-700' 
+                        ? 'bg-emerald-100 text-emerald-700' 
                         : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                     }`}
                   >
@@ -95,7 +95,7 @@ const Modal = () => {
                     placeholder={contactType === 'email' ? 'Enter your email' : 'Enter your phone number'}
                     value={contactInfo}
                     onChange={(e) => setContactInfo(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
                   />
                 </div>
               </div>
@@ -108,7 +108,7 @@ const Modal = () => {
                 className={`flex-1 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
                   modalType === 'vendor' && !contactInfo.trim()
                     ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                    : 'bg-gradient-to-r from-orange-500 to-red-500 text-white hover:from-orange-600 hover:to-red-600 transform hover:scale-105'
+                    : 'bg-gradient-to-r from-emerald-500 to-green-500 text-white hover:from-emerald-600 hover:to-green-600 transform hover:scale-105'
                 }`}
                 disabled={modalType === 'vendor' && !contactInfo.trim()}
               >

@@ -33,7 +33,7 @@ const ComingSoon = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-16 bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 min-h-screen flex items-center">
+      <section className="pt-16 bg-gradient-to-br from-emerald-50 via-green-50 to-lime-50 min-h-screen flex items-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <div className="space-y-8">
             {/* Logo */}
@@ -45,14 +45,14 @@ const ComingSoon = () => {
 
             {/* Main Content */}
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
-                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></span>
+              <div className="inline-flex items-center px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">
+                <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
                 Coming Soon
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Something{' '}
-                <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
                   Amazing
                 </span>{' '}
                 is Coming
@@ -65,12 +65,12 @@ const ComingSoon = () => {
             </div>
 
             {/* Launch Date */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md mx-auto">
+            <div className="rounded-2xl shadow-xl p-8 max-w-md mx-auto bg-gradient-to-b from-white/70 via-white/50 to-white/30 ring-1 ring-white/30 border border-white/20 supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150">
               <div className="flex items-center justify-center space-x-3 mb-4">
-                <Calendar className="h-6 w-6 text-orange-600" />
+                <Calendar className="h-6 w-6 text-emerald-600" />
                 <span className="text-lg font-semibold text-gray-900">Launch Date</span>
               </div>
-              <div className="text-3xl font-bold text-orange-600 mb-2">October 1st, 2025</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">November 1st, 2025</div>
               <div className="text-gray-600">Get ready for the revolution!</div>
             </div>
 
@@ -85,7 +85,7 @@ const ComingSoon = () => {
                       placeholder="Enter your email address"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                      className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
                       required
                     />
                   </div>
@@ -95,7 +95,7 @@ const ComingSoon = () => {
                     className={`w-full flex items-center justify-center px-6 py-4 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg ${
                       isLoading || !email.trim()
                         ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                        : 'bg-gradient-to-r from-orange-500 to-red-500 text-white hover:from-orange-600 hover:to-red-600'
+                        : 'bg-gradient-to-r from-emerald-500 to-green-500 text-white hover:from-emerald-600 hover:to-green-600'
                     }`}
                   >
                     {isLoading ? (
@@ -146,7 +146,7 @@ const ComingSoon = () => {
             <div className="pt-8">
               <a
                 href="/"
-                className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium transition-colors duration-200"
+                className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium transition-colors duration-200"
               >
                 <ArrowRight className="h-4 w-4 mr-2 rotate-180" />
                 Back to Home

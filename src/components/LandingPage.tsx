@@ -12,18 +12,18 @@ const LandingPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-16 bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 min-h-screen flex items-center">
+      <section className="pt-16 bg-gradient-to-br from-emerald-50 via-green-50 to-lime-50 min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></span>
-                  Going live in Bengaluru from October 1st
+                <div className="inline-flex items-center px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
+                  Going live in Bengaluru from Nov 1st
                 </div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Snacks & Essentials{' '}
-                  <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
                     Delivered to Your Vehicle
                   </span>{' '}
                   in Traffic
@@ -37,7 +37,7 @@ const LandingPage = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={() => openModal('app')}
-                  className="group flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="group flex items-center justify-center px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download App
@@ -45,7 +45,7 @@ const LandingPage = () => {
                 </button>
                 <button 
                   onClick={() => { window.location.href = 'https://tarfficfrnd-vendor-patner.vercel.app'; }}
-                  className="group flex items-center justify-center px-8 py-4 bg-white text-orange-600 font-semibold border-2 border-orange-600 rounded-xl hover:bg-orange-600 hover:text-white transition-all duration-300 shadow-lg"
+                  className="group flex items-center justify-center px-8 py-4 bg-white text-emerald-600 font-semibold border-2 border-emerald-600 rounded-xl hover:bg-emerald-600 hover:text-white transition-all duration-300 shadow-lg"
                 >
                   <Users className="mr-2 h-5 w-5" />
                   Join as Vendor
@@ -90,15 +90,15 @@ const LandingPage = () => {
                 
                 <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg">
                   <div className="flex items-center space-x-2">
-                    <MapPin className="h-5 w-5 text-red-500" />
+                    <MapPin className="h-5 w-5 text-emerald-500" />
                     <span className="text-sm font-medium">Live tracking</span>
                   </div>
                 </div>
               </div>
               
               {/* Background decorations */}
-              <div className="absolute -z-10 top-8 right-8 w-72 h-72 bg-gradient-to-br from-orange-200 to-red-200 rounded-full blur-3xl opacity-30"></div>
-              <div className="absolute -z-10 -bottom-8 -left-8 w-64 h-64 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full blur-3xl opacity-30"></div>
+              <div className="absolute -z-10 top-8 right-8 w-72 h-72 bg-gradient-to-br from-emerald-200/70 to-green-200/60 rounded-full blur-3xl opacity-40 ring-1 ring-white/20"></div>
+              <div className="absolute -z-10 -bottom-8 -left-8 w-64 h-64 bg-gradient-to-br from-lime-200/70 to-teal-200/60 rounded-full blur-3xl opacity-40 ring-1 ring-white/20"></div>
             </div>
           </div>
         </div>
@@ -108,10 +108,10 @@ const LandingPage = () => {
       <section className="py-16 bg-gradient-to-r from-gray-900 via-black to-gray-900 relative overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-2 h-2 bg-orange-500 rounded-full animate-ping"></div>
-          <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-red-500 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-yellow-500 rounded-full animate-bounce"></div>
-          <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-orange-400 rounded-full animate-ping"></div>
+          <div className="absolute top-0 left-1/4 w-2 h-2 bg-emerald-500 rounded-full animate-ping"></div>
+          <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-green-500 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-lime-500 rounded-full animate-bounce"></div>
+          <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-emerald-400 rounded-full animate-ping"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -119,16 +119,16 @@ const LandingPage = () => {
             <div className="inline-block">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
                 <span className="block mb-2">We don't wait for the</span>
-                <span className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-emerald-400 via-green-500 to-lime-500 bg-clip-text text-transparent animate-pulse">
                   traffic to clear
                 </span>
                 <span className="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold">
                   — we deliver{' '}
                   <span className="relative">
-                    <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-lime-400 to-emerald-500 bg-clip-text text-transparent">
                       through it
                     </span>
-                    <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-pulse"></div>
+                    <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-lime-400 to-emerald-500 rounded-full animate-pulse"></div>
                   </span>
                 </span>
               </h2>
@@ -136,9 +136,9 @@ const LandingPage = () => {
             
             {/* Decorative elements */}
             <div className="flex justify-center items-center space-x-4 mt-8">
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-orange-500"></div>
-              <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-              <div className="w-12 h-0.5 bg-gradient-to-l from-transparent to-orange-500"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-emerald-500"></div>
+              <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-l from-transparent to-emerald-500"></div>
             </div>
           </div>
         </div>
@@ -163,25 +163,25 @@ const LandingPage = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
-              <div className="space-y-4 text-center group">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                  <Clock className="h-8 w-8 text-orange-600" />
+              <div className="space-y-4 text-center group p-6 rounded-2xl bg-gradient-to-b from-white/70 via-white/50 to-white/30 ring-1 ring-white/30 border border-white/20 supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150 hover:from-white/80 hover:via-white/60 hover:to-white/40 transition-all">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-green-100 rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <Clock className="h-8 w-8 text-emerald-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">Time Efficient</h3>
                 <p className="text-gray-600">Turn traffic delays into productive shopping time with ultra-fast delivery.</p>
               </div>
               
-              <div className="space-y-4 text-center group">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                  <MapPin className="h-8 w-8 text-orange-600" />
+              <div className="space-y-4 text-center group p-6 rounded-2xl bg-gradient-to-b from-white/70 via-white/50 to-white/30 ring-1 ring-white/30 border border-white/20 supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150 hover:from-white/80 hover:via-white/60 hover:to-white/40 transition-all">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-green-100 rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <MapPin className="h-8 w-8 text-emerald-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">Hyperlocal</h3>
                 <p className="text-gray-600">Connect with vendors in your immediate vicinity for fresh, quality products.</p>
               </div>
               
-              <div className="space-y-4 text-center group">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                  <Users className="h-8 w-8 text-orange-600" />
+              <div className="space-y-4 text-center group p-6 rounded-2xl bg-gradient-to-b from-white/70 via-white/50 to-white/30 ring-1 ring-white/30 border border-white/20 supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150 hover:from-white/80 hover:via-white/60 hover:to-white/40 transition-all">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-green-100 rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <Users className="h-8 w-8 text-emerald-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">Community Driven</h3>
                 <p className="text-gray-600">Supporting local businesses while creating employment opportunities.</p>
@@ -192,27 +192,27 @@ const LandingPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500">
+      <section className="py-20 bg-gradient-to-r from-emerald-600 to-green-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
               Ready to Transform Your Commute?
             </h2>
-            <p className="text-xl text-orange-100 max-w-2xl mx-auto">
+            <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
               Join thousands of smart commuters who've discovered the convenience of Traffic Frnd. 
               Download the app now and never waste traffic time again.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => openModal('app')}
-                className="group flex items-center justify-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="group flex items-center justify-center px-8 py-4 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <Smartphone className="mr-2 h-5 w-5" />
                 Download for Android
               </button>
               <button 
                 onClick={() => openModal('app')}
-                className="group flex items-center justify-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="group flex items-center justify-center px-8 py-4 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <Smartphone className="mr-2 h-5 w-5" />
                 Download for iOS
@@ -226,9 +226,9 @@ const LandingPage = () => {
       <section className="py-16 bg-gradient-to-r from-gray-900 via-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <div className="flex justify-center">
+              <div className="flex justify-center">
               <div>
-                <Logo size="md" />
+                <Logo size="md" className="md:h-20 md:w-25" />
               </div>
             </div>
             
@@ -245,7 +245,7 @@ const LandingPage = () => {
                   href="https://www.curio-spry.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-orange-400 hover:text-orange-300 transition-colors duration-200"
+                  className="text-emerald-400 hover:text-emerald-300 transition-colors duration-200"
                 >
                   www.curio-spry.com
                 </a>

@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-white/40 via-white/20 to-transparent border-b border-white/30 ring-1 ring-white/20 shadow-lg supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -25,9 +25,12 @@ const Header = () => {
             <div className="group-hover:scale-105 transition-transform duration-200">
               <Logo size="sm" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-              Traffic Frnd
-            </span>
+            <img
+              src="/images/logo1.png"
+              alt="Brand mark"
+              className="h-8 w-22 md:h-20 md:w-40 object-contain rounded-md"
+            />
+            
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,9 +39,9 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-orange-600 ${
+                className={`text-sm font-medium transition-colors duration-200 hover:text-emerald-600 ${
                   location.pathname === item.href
-                    ? 'text-orange-600 border-b-2 border-orange-600 pb-1'
+                    ? 'text-emerald-600 border-b-2 border-emerald-600 pb-1'
                     : 'text-gray-700'
                 }`}
               >
@@ -50,14 +53,8 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <button 
-              onClick={() => { window.location.href = 'https://tarfficfrnd-vendor-patner.vercel.app'; }}
-              className="px-4 py-2 text-sm font-medium text-orange-600 border border-orange-600 rounded-lg hover:bg-orange-50 transition-colors duration-200"
-            >
-              Join as Vendor
-            </button>
-            <button 
               onClick={() => openModal('app')}
-              className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-200 transform hover:scale-105"
+              className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg hover:from-emerald-600 hover:to-green-600 transition-all duration-200 transform hover:scale-105"
             >
               Download App
             </button>
@@ -83,13 +80,13 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="md:hidden bg-gradient-to-b from-white/50 via-white/30 to-transparent border-t border-white/30 ring-1 ring-white/20 supports-[backdrop-filter]:backdrop-blur-sm backdrop-saturate-150">
           <div className="px-4 py-2 space-y-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors duration-200"
+                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
@@ -98,19 +95,10 @@ const Header = () => {
             <div className="pt-4 space-y-2">
               <button 
                 onClick={() => {
-                  setIsMenuOpen(false);
-                  window.location.href = 'https://tarfficfrnd-vendor-patner.vercel.app';
-                }}
-                className="w-full px-4 py-2 text-sm font-medium text-orange-600 border border-orange-600 rounded-lg hover:bg-orange-50 transition-colors duration-200"
-              >
-                Join as Vendor
-              </button>
-              <button 
-                onClick={() => {
                   openModal('app');
                   setIsMenuOpen(false);
                 }}
-                className="w-full px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-200"
+                className="w-full px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg hover:from-emerald-600 hover:to-green-600 transition-all duration-200"
               >
                 Download App
               </button>

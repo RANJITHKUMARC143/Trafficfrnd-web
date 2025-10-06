@@ -11,7 +11,7 @@ const CookiePolicy = () => {
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Cookie Policy</h1>
           <p className="text-gray-600 mb-4">Last updated: September 12, 2025</p>
 
-          <div className="prose prose-orange max-w-none">
+          <div className="prose prose-emerald max-w-none">
             <p>
               Traffic Frnd uses cookies and similar technologies to improve your experience,
               analyze performance, and support essential features.

@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
           <p className="text-gray-600 mb-4">Last updated: September 12, 2025</p>
 
-          <div className="prose prose-orange max-w-none">
+          <div className="prose prose-emerald max-w-none">
             <p>
               Curiospry Technologies Pvt Ltd ("Curiospry", "we", "us", or "our") respects your
               privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard

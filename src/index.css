@@ -8,4 +8,4 @@
 .prose p { @apply text-gray-700 leading-relaxed; }
 .prose ul { @apply list-disc pl-6; }
 .prose li { @apply my-1; }
-.prose a { @apply text-orange-600 hover:text-orange-700; }
+.prose a { @apply text-emerald-600 hover:text-emerald-700; }
