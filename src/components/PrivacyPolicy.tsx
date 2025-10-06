@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from './Header';
 import Footer from './Footer';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Privacy Policy | Traffic Frnd</title>
+        <meta name="description" content="Learn how Traffic Frnd collects, uses, and safeguards your information." />
+        <link rel="canonical" href="https://trafficfrnd.com/privacy" />
+      </Helmet>
       <Header />
       <main className="pt-20 pb-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

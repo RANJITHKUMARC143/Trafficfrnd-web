@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Play, Clock, MapPin, Users, Star, Download, Smartphone } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
@@ -9,6 +10,37 @@ const LandingPage = () => {
   const { openModal } = useModal();
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Traffic Frnd | Snacks & Essentials Delivered in Traffic - Bengaluru</title>
+        <meta name="description" content="Get snacks, drinks, and groceries delivered directly to your car during traffic by trained walkers. Now serving Bengaluru." />
+        <link rel="canonical" href="https://trafficfrnd.com/" />
+        <meta property="og:title" content="Traffic Frnd – Snacks & Grocery Delivery in Traffic Jam | Bangalore" />
+        <meta property="og:description" content="Stuck in traffic? Get essentials delivered directly to your vehicle. We deliver through traffic." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://trafficfrnd.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Traffic Frnd',
+          url: 'https://trafficfrnd.com/',
+          logo: 'https://trafficfrnd.com/favicon-512.png',
+          sameAs: [
+            'https://www.instagram.com/curio_spry_official',
+            'https://www.linkedin.com/in/curiospry-technologies-327987354/',
+            'https://www.youtube.com/@CURIOSPRYTECHNOLOGIES'
+          ]
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'MobileApplication',
+          name: 'Traffic Frnd',
+          operatingSystem: 'Android, iOS',
+          applicationCategory: 'FoodApplication',
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
+          url: 'https://trafficfrnd.com/'
+        })}</script>
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

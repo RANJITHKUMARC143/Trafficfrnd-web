@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Instagram, Linkedin, Youtube } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
@@ -83,6 +84,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Contact Us | Traffic Frnd</title>
+        <meta name="description" content="Get in touch with Traffic Frnd for support, vendor partnerships, or delivery opportunities." />
+        <link rel="canonical" href="https://trafficfrnd.com/contact" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

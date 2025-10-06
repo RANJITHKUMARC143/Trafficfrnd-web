@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Mail, Calendar, ArrowRight, Instagram, Linkedin, Youtube, CheckCircle } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
@@ -30,6 +31,11 @@ const ComingSoon = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Coming Soon | Traffic Frnd</title>
+        <meta name="description" content="We’re launching soon in Bengaluru. Subscribe for early access and updates." />
+        <link rel="canonical" href="https://trafficfrnd.com/coming-soon" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

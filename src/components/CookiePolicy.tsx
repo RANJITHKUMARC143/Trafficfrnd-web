@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from './Header';
 import Footer from './Footer';
 
 const CookiePolicy = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Cookie Policy | Traffic Frnd</title>
+        <meta name="description" content="Understand how Traffic Frnd uses cookies and similar technologies." />
+        <link rel="canonical" href="https://trafficfrnd.com/cookies" />
+      </Helmet>
       <Header />
       <main className="pt-20 pb-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

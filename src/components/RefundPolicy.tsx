@@ -1,17 +1,23 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from './Header';
 import Footer from './Footer';
 
 const RefundPolicy = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Refund Policy | Traffic Frnd</title>
+        <meta name="description" content="Read Traffic Frnd's refund policy, including eligibility and how to request a refund." />
+        <link rel="canonical" href="https://trafficfrnd.com/refunds" />
+      </Helmet>
       <Header />
       <main className="pt-20 pb-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Refund Policy</h1>
           <p className="text-gray-600 mb-4">Last updated: September 12, 2025</p>
 
-          <div className="prose prose-orange max-w-none">
+          <div className="prose prose-emerald max-w-none">
             <p>
               We aim to deliver quality products promptly. If there is an issue with your
               order, the following refund guidelines apply.

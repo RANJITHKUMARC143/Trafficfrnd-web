@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ShoppingCart, Zap, Clock, CheckCircle, ArrowRight, Download, Users } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
@@ -32,6 +33,11 @@ const HowItWorks = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>How It Works | Traffic Frnd</title>
+        <meta name="description" content="See how Traffic Frnd detects traffic, connects you with nearby vendors, and delivers to your vehicle in minutes." />
+        <link rel="canonical" href="https://trafficfrnd.com/how-it-works" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

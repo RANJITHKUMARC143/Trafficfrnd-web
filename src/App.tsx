@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import HowItWorks from './components/HowItWorks';
@@ -16,26 +17,28 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <ModalProvider>
-      <Router>
-        <div className="min-h-screen">
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/how-it-works" element={<HowItWorks />} />
-            <Route path="/coming-soon" element={<ComingSoon />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/terms" element={<TermsOfService />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/cookies" element={<CookiePolicy />} />
-            <Route path="/refunds" element={<RefundPolicy />} />
-          </Routes>
-        </div>
-        <Modal />
-      </Router>
-      <Analytics />
-      <SpeedInsights />
-    </ModalProvider>
+    <HelmetProvider>
+      <ModalProvider>
+        <Router>
+          <div className="min-h-screen">
+            <ScrollToTop />
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/coming-soon" element={<ComingSoon />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/terms" element={<TermsOfService />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/cookies" element={<CookiePolicy />} />
+              <Route path="/refunds" element={<RefundPolicy />} />
+            </Routes>
+          </div>
+          <Modal />
+        </Router>
+        <Analytics />
+        <SpeedInsights />
+      </ModalProvider>
+    </HelmetProvider>
   );
 }
 
