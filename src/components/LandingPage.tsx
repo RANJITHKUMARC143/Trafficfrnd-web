@@ -18,7 +18,11 @@ const LandingPage = () => {
         <meta property="og:description" content="Stuck in traffic? Get essentials delivered directly to your vehicle. We deliver through traffic." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trafficfrnd.com/" />
+        <meta property="og:image" content="https://trafficfrnd.com/favicon-512.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://trafficfrnd.com/favicon-512.png" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Organization',
